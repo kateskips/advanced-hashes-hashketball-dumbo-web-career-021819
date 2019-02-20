@@ -27,6 +27,15 @@ def game_hash
   }
 end
 
+def slam_dunks_plus()
+  game_hash[:home][:players].each do |name, player_data|
+    player_data[:slam_dunks]
+    binding.pry
+  end
+end     
+      
+  slam_dunks_plus()
+
 def num_points_scored(name)
   game_hash.each do |location, team_data|
     team_data[:players].each do |player_name, data|
